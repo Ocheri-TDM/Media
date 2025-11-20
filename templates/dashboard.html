@@ -35,7 +35,7 @@
             <div class="logo">
                 <i class="fa-solid fa-bolt" style="color: var(--primary-green, #00C292);"></i>
                 <div>
-                    <span>NeuroMedia</span>
+                    <span style="color: black;">Neuro<span>Media</span></span>
                     <span class="logo-subtitle" data-key="subtitle">Образовательная медиа-платформа</span>
                 </div>
             </div>
@@ -207,16 +207,16 @@
                 <div class="card-container" style="height: auto; align-self: start;">
                     <h3 class="section-title" data-key="quick_act">Быстрые действия</h3>
                     <div class="quick-actions">
-                        <button class="action-btn primary">
+                        <button class="action-btn primary" id="btn-go-upload">
                             <i class="fa-solid fa-upload"></i> <span data-key="btn_upload">Загрузить</span>
                         </button>
-                        <button class="action-btn">
+                        <button class="action-btn" id="btn-go-gen">
                             <i class="fa-solid fa-wand-magic-sparkles"></i> <span data-key="btn_generate">Создать с AI</span>
                         </button>
-                        <button class="action-btn">
+                        <button class="action-btn" id="btn-go-trim">
                             <i class="fa-solid fa-scissors"></i> <span data-key="btn_trim">Обрезать видео</span>
                         </button>
-                        <button class="action-btn">
+                        <button class="action-btn" id="btn-go-vision">
                             <i class="fa-regular fa-eye"></i> <span data-key="btn_analyze">Анализ медиа</span>
                         </button>
                     </div>
@@ -335,6 +335,13 @@
             }
         });
     }
+</script>
+
+<script>
+    document.getElementById('btn-go-upload').onclick = () => window.location.href = './media.html';
+    document.getElementById('btn-go-gen').onclick    = () => window.location.href = './media-chat.html';
+    document.getElementById('btn-go-trim').onclick   = () => window.location.href = './ai-video.html';
+    document.getElementById('btn-go-vision').onclick = () => window.location.href = './computer-v.html';
 </script>
 
 </body>

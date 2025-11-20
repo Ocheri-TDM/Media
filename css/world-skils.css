@@ -216,7 +216,7 @@
         }
 
         @media (max-width: 768px) {
-            body { flex-direction: column; height: auto; overflow: visible; }
+            body { flex-direction: column;  overflow: visible; }
              .sidebar {
         position: fixed;
         top: 0;
